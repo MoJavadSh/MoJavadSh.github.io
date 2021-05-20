@@ -8,6 +8,7 @@ var messageBox = document.querySelector('.js-message');
       card.classList.add('active');
   });
 
+
   closeBtn.forEach(function (element, index) {
      console.log(element);
       element.addEventListener('click',function (e) {
