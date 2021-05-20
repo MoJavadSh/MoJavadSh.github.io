@@ -25,7 +25,9 @@ a, a:hover {
   stroke: currentColor;
   fill: currentColor;
 }
-
+.kam {
+    background-image: linear-gradient(-20deg, #007069 0%, #c3e8ed 100%);
+}
 .wrapper {
   width: 100%;
   width: 100%;
@@ -33,10 +35,13 @@ a, a:hover {
   min-height: 100vh;
   padding: 50px 20px;
   padding-top: 100px;
+
+/*
   display: flex;
   background-image: linear-gradient(-20deg, #007069 0%, #c3e8ed 100%);
   display: flex;
   background-image: linear-gradient(-20deg, #007069 0%, #c3e8ed 100%);
+*/
 }
 @media screen and (max-width: 768px) {
   .wrapper {
