@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleclock.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <title>MoJavad</title>
+    <script language="JavaScript1.2">
+    function disableselect(e){
+    return false
+    }function reEnable(){
+    return true
+    }document.onselectstart=new Function ("return false")
+    if (window.sidebar){
+    document.onmousedown=disableselect
+    document.onclick=reEnable
+    }</script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  </head>
+
+<body class="kam">
+ <div class="wrapper">
+  <div class="profile-card js-profile-card">
+<div class="main">
+    <div class="clock">
+        <!-- center point -->
+        <div id="center"></div>
+        <!-- hours mark -->
+        <div id="time12"></div>
+        <div id="time3"></div>
+        <div id="time6"></div>
+        <div id="time9"></div>
+        <!-- dark-mode button -->
+        <div class="switch">
+            <button id="button">
+                <i class="fas fa-moon"></i>
+                <!-- <i class="fa fa-moon-o"></i> -->
+            </button>
+        </div>
+        <!-- hours,minutes, seconds hand -->
+        <div class="seconds">
+            <div id="sec"></div>
+        </div>
+        <div class="minutes">
+            <div id="min"></div>
+        </div>
+        <div class="hour">
+            <div id="hour"></div>
+        </div>
+        <!-- javascript part -->
+        <script src="app2.js"></script>
+    </div>
+</div>
+    </div>
+  </div>
+
+
+</body>
